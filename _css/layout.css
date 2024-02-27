@@ -122,11 +122,9 @@ header {
 
 /* =============== DIV ORDER ================== */
 .order {
+    background-color:var(--gray-background);
+    padding: 50px 0;
     position: relative;
-    background-color: var(--gray-soft);
-    height: 42vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
 }
 
 
@@ -138,36 +136,32 @@ header {
 }
 
 
-.order div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 10%;
+.order div.search input, .order div.selection select {
+    padding: 16px 64px; 
+    background-color: var(--gray-soft);
+    font-size: 24px;
+    color:var(--gray-font);
+    border: .5px solid var(--gray-background);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.order div.search i {
+    right: 88%;
+    top: 82%;
+    position: absolute;
+    
+}
 
+
+div.option {
+    display: flex;
+    justify-content: space-between;
 }
 
 
 .order input {
-    background-color: var(--gray-background);
-    border: .5px solid var(--gray-background);
-    border-radius: 5px;
-    padding: 32px;
-    width: 7%;
-    height: .2vh;
-    margin-right: 30px;
-}
-
-button{
-    width: 90%;
-    justify-content: center;
-    background-color: var(--gray-background);
-}
-.categoria {
-    display: block;
-    padding: 8px 40px;
-    background-color: #282828;
-    cursor: pointer;
-    margin-top: 10px;
+    margin-left: 30%;
+    
 }
 
 

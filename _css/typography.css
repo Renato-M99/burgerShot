@@ -65,8 +65,9 @@ header li a:hover {
 }
 
 /* ====================== DIV ORDER ==================== */
-
-.order h3 {
+.order div.container h3 {
+    color: #FFF;
+    font-family: Inter;
     font-size: 32px;
     font-style: normal;
     font-weight: 500;
