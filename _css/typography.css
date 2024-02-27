@@ -20,7 +20,7 @@ header li a:hover {
 
 .order-btn a:hover {
     border: 1px solid var(--orange);
-    padding: 8px 64px;
+
 }
 
 .order-btn a {
@@ -71,4 +71,47 @@ header li a:hover {
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+}
+
+/*================= SECTION BURGERS =================== */
+
+.bottom p:first-child {
+    color: #FFF;
+
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.bottom p:nth-child(2) {
+    color: #FFF;
+
+    font-family: Calistoga;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.bottom p:nth-child(3) {
+    color: #FE6A0F;
+
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+/* =================== footer ==================  */
+footer p {
+    color: #5F5F5F;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
 }

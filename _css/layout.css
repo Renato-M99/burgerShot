@@ -12,11 +12,22 @@
     margin: 0;
     padding: 0;
 }
+.img-fluid {
+    width: max(14vw, 100px);
+    object-fit: cover;
+}
+
+html {
+    scroll-behavior: smooth;
+
+}
+
 
 .container {
     max-width: 1440px;
     margin: auto;
     position: relative;
+  
 }
 
 body {
@@ -103,8 +114,8 @@ header {
 
 .right-banner img {
     width: 480px;
-    margin-top: 80px;
-    position:absolute;
+    margin-top: 180px;
+    position: absolute;
     z-index: 9999;
 }
 
@@ -113,9 +124,11 @@ header {
 .order {
     position: relative;
     background-color: var(--gray-soft);
-    height: 320px;
-    
+    height: 42vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
+
 
 .order h3 {
     width: 20%;
@@ -125,11 +138,10 @@ header {
 }
 
 
-.order div {
+.order div{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
     margin-left: 10%;
 
 }
@@ -140,30 +152,92 @@ header {
     border: .5px solid var(--gray-background);
     border-radius: 5px;
     padding: 32px;
-    width: 37%;
-    height: 16px;
+    width: 7%;
+    height: .2vh;
     margin-right: 30px;
 }
 
-.order span {
+button{
     width: 90%;
     justify-content: center;
-   
+    background-color: var(--gray-background);
+}
+.categoria {
+    display: block;
+    padding: 8px 40px;
+    background-color: #282828;
+    cursor: pointer;
+    margin-top: 10px;
 }
 
 
-
-.fa-magnifying-glass{
-    position:absolute;
-    top:52%;
-    left: 10.5%;
-    margin-left: 0.1%;
-   
-}
-
-.fa-chevron-down{
-    position: absolute;
-    top: 52%;
-    right:19%;
+/* ================ SECTION BURGERS ==================*/
+.burgers{
     
+    width: 65%;
+    margin: 0 auto;
+}
+
+.burgers-container{
+    margin-top: 64px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    
+}
+
+.burger-item{
+    cursor: pointer;
+    width: 280px;
+    height: 315px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.burger-item:hover{
+    border: 1px solid white;
+}
+.top{
+    width: 100%;
+    height: 50%;
+    background-color: var(--gray-soft);
+}
+
+.top img{
+    width: 190px;
+    margin-top: 20px;
+    position: absolute;
+    z-index: 9999;
+    margin-left: 3%;
+}
+
+.bottom{
+    width: 100%;
+    height: 50%;
+  
+    background-color: var(--gray-background);
+    
+}
+
+.bottom div{
+    margin-top: 16%;
+    margin-left: 7%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ======================= footer =====================*/
+footer{
+    margin-top: 30px;
+    padding-bottom: 50px;
+    padding-top: 72px;
+    background-color: #1f1f1f;
+    display: flex;
+    justify-content: space-around;
+}
+#logo-footer {
+    margin-right: 40px;
 }
