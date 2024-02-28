@@ -8,6 +8,8 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./_css/layout.css">
     <link rel="stylesheet" href="./_css/typography.css">
+    <!-- CSS Responsivo -->
+    <link rel="stylesheet" href="./_css/mobile.css" media="screen and (max-width:480px)">
     <!-- Google's Font Awesome -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,6 +21,7 @@
 <body>
     <div class="container">
         <header>
+            
             <nav class="nav-container container">
                 <ul>
 
@@ -29,6 +32,10 @@
                     <li class="order-btn"><a href="#order">Fazer pedido</a></li>
                 </ul>
             </nav>
+            <div class="menu-burger">
+                <img src="./_assets/_pictures/Burger.svg" alt="x-burger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
         </header>
         <div>
             <section class="banner">
@@ -49,14 +56,14 @@
         </div>
     </div>
     <div class="order">
-        <div class="container">
+        <div class="container order">
             <h3>Pesquise o seu Hamburguer favorito!</h3>
             <div class="option">
-                <div class="search">
+                <div class="search responsive">
                     <i class="fa-solid fa-magnifying-glass"></i>
                     <input type="text" placeholder="Digite o nome do Burguer">
                 </div>
-                <div class="selection">
+                <div class="selection responsive">
                     <select name="burgers" id="">
                         <option class="placeh" value="">Selecionar categoria</option>
                         <option value="texas-burger">Texas Burger</option>
@@ -76,7 +83,7 @@
             <div class="burgers-container">
                 <div class="burger-item">
                     <div class="top">
-                        <img class="img-fluid" src="./_assets/_pictures/Card-burger-1-1.png" alt="lanche">
+                        <img class="img-fluid promo-img" src="./_assets/_pictures/Card-burger-1-1.png" alt="lanche">
                     </div>
                     <div class="bottom">
                         <div>
@@ -100,7 +107,7 @@
                 </div>
                 <div class="burger-item">
                     <div class="top">
-                        <img src="./_assets/_pictures/Card-burger-2-3.png" alt=lanche>
+                        <img src="./_assets/_pictures/Card-burger-2-3.png" alt="lanche">
                     </div>
                     <div class="bottom">
                         <div>
@@ -153,11 +160,23 @@
         </main>
     </div>
     <footer>
-        <div id="logo-footer"><img src="./_assets/_pictures/logo.svg" alt=""></div>
-        <p>powered B7web.</p>
+        <div class="container footer-div">
+            <div id="logo-footer">
+                <img src="./_assets/_pictures/logo.svg" alt="">
+            </div>
+            <p>powered B7web.</p>
+        </div>
     </footer>
 
     <script src="https://kit.fontawesome.com/676eccc9ff.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
+
+<!-- flex-grow: define o quanto os elementos filhos irão crescer até ocuparem o tamanho do pai. Quanto maior o número, maior será o espaço o elemento irá ocupar-->
+
+<!-- flex-shrink: irá definir quanto o máximo de um elemento poderá ser diminuído na tela. -->
+
+<!-- flex-basis: determina qual será largura miníma que um elemento terá. -->
+
+<!-- flex: é abreviação do flex-grow: 1, flex-shrink: 1, flex-basis: 0 -->

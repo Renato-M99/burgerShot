@@ -27,11 +27,17 @@ html {
     max-width: 1440px;
     margin: auto;
     position: relative;
-  
+    width: 100%;
+    /* padding: 0 20px; */
 }
 
 body {
     background-color: var(--black-background);
+}
+
+/* ================== OCULTAR MENU PARA USAR NO RESPONSIVO ====================== */
+.menu-burger{
+    display: none;
 }
 
 /* =================== HEADER ===================== */
@@ -199,6 +205,13 @@ div.option {
     height: 50%;
     background-color: var(--gray-soft);
 }
+.promo{
+    background-color: var(--orange);
+    text-align: center;
+    width: 32%;
+    padding: 12px;
+    border-radius: 5px;
+}
 
 .top img{
     width: 190px;
@@ -234,4 +247,11 @@ footer{
 }
 #logo-footer {
     margin-right: 40px;
+
 }
+
+.footer-div{
+    display: flex;
+    justify-content: space-around;
+}
+

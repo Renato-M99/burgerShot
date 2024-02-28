@@ -1,0 +1,103 @@
+/* =================== HEADER/MENU ====================== */
+.nav-container ul li a, .nav-container ul li img {
+    display: none;
+
+}
+
+.menu-burger {
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu-burger i {
+    font-size: 1.8rem;
+}
+
+.menu-burger img {
+    width: 160px;
+}
+
+/* ================= BANNER ================ */
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.left-banner{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.left-banner button {
+    display: flex;
+    justify-content: center;
+}
+
+.left-banner h2 {
+    font-size: 44px;
+}
+
+.left-banner p {
+    color: #FFF;
+
+    text-align: left;
+    font-family: Inter;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+
+}
+
+.right-banner img {
+    display: none;
+    /* ocultei temporariamente */
+}
+
+/* ===================== DIV ORDER ===================== */
+
+.option {
+    display: flex;
+    flex-flow: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    
+}
+
+
+.search input{
+    margin-left: 32%;
+    width:256px;
+}
+
+.selection select{
+    margin-left: 32%;
+    margin-top: 16px;
+    width: 384px;
+}
+
+
+.container h3 {
+    color: #FFF;
+
+    text-align: center;
+    font-family: Inter;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+}
+
+
+
+/* ================ burgers ============== */
+.burgers-container, .footer-div {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
