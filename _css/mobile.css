@@ -20,12 +20,16 @@
 /* ================= BANNER ================ */
 
 .banner {
+    margin-top: 60px;
     display: flex;
     flex-direction: column;
-    
+    text-align: center;
 }
 
-.left-banner{
+
+
+.left-banner {
+
     width: 100%;
     margin: 0 auto;
 }
@@ -33,23 +37,37 @@
 .left-banner button {
     display: flex;
     justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 25%;
+    top: 75%;
 }
 
 .left-banner h2 {
-    font-size: 44px;
+    color: #FFF;
+
+    text-align: center;
+    font-family: Calistoga;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 114%;
+    /* 114.453% */
 }
 
 .left-banner p {
-    color: #FFF;
 
+    color: #FFF;
     text-align: left;
     font-family: Inter;
-    font-size: 22px;
+    font-size: 15px;
     font-style: normal;
     font-weight: 400;
     line-height: 130%;
 
 }
+
+
 
 .right-banner img {
     display: none;
@@ -65,16 +83,19 @@
     justify-content: center;
     align-items: center;
     width: 50%;
-    
+
 }
 
+.search i {
+    display: none;
+}
 
-.search input{
+.search input {
     margin-left: 32%;
-    width:256px;
+    width: 256px;
 }
 
-.selection select{
+.selection select {
     margin-left: 32%;
     margin-top: 16px;
     width: 384px;
@@ -100,4 +121,9 @@
     display: flex;
     flex-flow: column;
     align-items: center;
+}
+
+.container {
+    max-height: 100% !important;
+    overflow: hidden;
 }
